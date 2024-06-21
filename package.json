@@ -1,0 +1,52 @@
+{
+  "name": "ngx-treeview",
+  "version": "10.0.2",
+  "license": "MIT",
+  "description": "An Angular treeview component with checkbox",
+  "keywords": [
+    "ng",
+    "ngx",
+    "angular",
+    "ngx-treeview",
+    "tree",
+    "treeview",
+    "tree-view",
+    "checkbox",
+    "dropdown",
+    "recursive",
+    "angular tree component"
+  ],
+  "author": "Leo Vo <leovo2708@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leovo2708/ngx-treeview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leovo2708/ngx-treeview/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "18.0.2",
+    "@angular/core": "18.0.2",
+    "lodash": "^4.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  },
+  "module": "fesm2022/ngx-treeview.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-treeview.mjs",
+      "esm": "./esm2022/ngx-treeview.mjs",
+      "default": "./fesm2022/ngx-treeview.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
